@@ -59,6 +59,10 @@ body {
 .navbar-nav  li a:hover {
     color: #C7C7C7 !important;
 }
+.navbar-nav li{
+  display: inline;
+  padding: 0 15px 0 0;
+}
 .footer-padding {
 	padding-bottom: 60px;
 }

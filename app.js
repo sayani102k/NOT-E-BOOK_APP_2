@@ -122,10 +122,12 @@ app.post("/subject",function(req,res){
 //   res.render(req.params.subjectName)
 // });
 
-var aboutContent="Hi this is a website made with love for you!";
+var aboutContent1="Hi this is a website made with love for you!";
+var aboutContent2="We are here to provide you with amazing facts!";
+var aboutContent3="THANKS FOR JOINING US!";
 var contactContent="Contact us:abcd@gmail.com"
 app.get("/about", function(req, res){
-  res.render("about", {aboutContent: aboutContent});
+  res.render("about", {aboutContent1: aboutContent1,aboutContent2: aboutContent2,aboutContent3: aboutContent3});
 });
 
 app.get("/contact", function(req, res){
