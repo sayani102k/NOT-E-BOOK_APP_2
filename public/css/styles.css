@@ -10,6 +10,9 @@ body {
   margin-bottom: 50px;
   margin-top: 50px;
 }
+.back-home{
+    margin-left: 20px;
+}
 .tabs{
   margin-right: 20px;
 
@@ -22,6 +25,12 @@ body {
   width: 25%;
   margin-left: 75px;
   margin-right: 75px;
+  margin-top: 10px;
+}
+.content{
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 10px;
 }
 .secret-text {
   text-align: center;

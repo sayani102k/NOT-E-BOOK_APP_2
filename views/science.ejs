@@ -1,43 +1,35 @@
 <%- include('partials/header') %>
 <div class="jumbotron text-center">
   <div class="container">
-    <!-- <i class="fas fa-key fa-6x"></i> -->
-    <h1 class="display-3">Facts</h1>
 
-    <%posts.forEach(function(post){ %>
+    <h1 class="display-3">SCIENCE Facts</h1>
+    <div class="content">
 
-  <h1><%=post.title%></h1>
+    <h2>MOLECULES</h2>
+      <p>A molecule is an electrically neutral group of two or more atoms held together by chemical bonds.[4][5][6][7][8] Molecules are distinguished from ions by their lack of electrical charge. However, in quantum physics, organic chemistry, and biochemistry, the term molecule is often used less strictly, also being applied to polyatomic ions.
+In the kinetic theory of gases, the term molecule is often used for any gaseous particle regardless of its composition. According to this definition, noble gas atoms are considered molecules as they are monatomic molecules.[9]
+A molecule may be homonuclear, that is, it consists of atoms of one chemical element, as with oxygen (O2); or it may be heteronuclear, a chemical compound composed of more than one element, as with water (H2O). Atoms and complexes connected by non-covalent interactions, such as hydrogen bonds or ionic bonds, are typically not considered single molecules.[10]
+Molecules as components of matter are common in organic substances (and therefore biochemistry). They also make up most of the oceans and atmosphere. However, the majority of familiar solid substances on Earth, including most of the minerals that make up the crust, mantle, and core of the Earth, contain many chemical bonds, but are not made of identifiable molecules. Also, no typical molecule can be defined for ionic crystals (salts) and covalent crystals (network solids), although these are often composed of repeating unit cells that extend either in a plane (such as in graphene) or three-dimensionally (such as in diamond, quartz, or sodium chloride). The theme of repeated unit-cellular-structure also holds for most condensed phases with metallic bonding, which means that solid metals are also not made of molecules. In glasses (solids that exist in a vitreous disordered state), atoms may also be held together by chemical bonds with no presence of any definable molecule, nor any of the regularity of repeating units that characterizes crystals.</p>
+    </div>
+    <div class="content">
 
-  <p><%=post.content.substring(0,100)+"...."%>
-    <a href="/posts/<%=post._id%>">Read More</a>
-  </p>
-
-
-<% }); %>
-
-
+    <h2>SILICONES</h2>
+      <p>F. S. Kipping coined the word silicone in 1901 to describe the formula of polydiphenylsiloxane, Ph2SiO (Ph denoting phenyl, C6H5), by analogy with the formula of the ketone benzophenone, Ph2CO (his term was originally silicoketone). Kipping was well aware that polydiphenylsiloxane is polymeric whereas benzophenone is monomeric and noted the contrasting properties of Ph2SiO and Ph2CO.[3][4] The discovery of the structural differences between Kipping's molecules and the ketones means that silicone is no longer the correct term (though it remains in common usage) and that the term siloxanes is correct according to the nomenclature of modern chemistry.[5]
+Silicone is often confused with silicon, but they are distinct substances. Silicon is a chemical element, a hard dark-grey semiconducting metalloid, which in its crystalline form is used to make integrated circuits ("electronic chips") and solar cells. Silicones are compounds that contain silicon, carbon, hydrogen, oxygen, and perhaps other kinds of atoms as well, and have very different physical and chemical properties.
+Compounds containing silicon–oxygen double bonds, now called silanones, but which could deserve the name "silicone", have long been identified as intermediates in gas-phase processes such as chemical vapor deposition in microelectronics production, and in the formation of ceramics by combustion.[6] However, they have a strong tendency to polymerize into siloxanes. The first stable silanone was obtained in 2014 by A. Filippou and others.[7]
+Synthesis
+Most common are materials based on polydimethylsiloxane, which is derived by hydrolysis of dimethyldichlorosilane. This dichloride reacts with water as follows:
+n Si(CH3)2Cl2 + n H2O → [Si(CH3)2O]n + 2n HCl
+The polymerization typically produces linear chains capped with Si−Cl or Si−OH (silanol) groups. Under different conditions, the polymer is a cyclic, not a chain.[1]
+For consumer applications such as caulks silyl acetates are used instead of silyl chlorides. The hydrolysis of the acetates produces the less dangerous acetic acid (the acid found in vinegar) as the reaction product of a much slower curing process. This chemistry is used in many consumer applications, such as silicone caulk and adhesives.
+n Si(CH3)2(CH3COO)2 + n H2O → [Si(CH3)2O]n + 2n CH3COOH
+Branches or crosslinks in the polymer chain can be introduced by using organosilicone precursors with fewer alkyl groups, such as methyl trichlorosilane and methyltrimethoxysilane. Ideally, each molecule of such a compound becomes a branch point. This process can be used to produce hard silicone resins. Similarly, precursors with three methyl groups can be used to limit molecular weight, since each such molecule has only one reactive site and so forms the end of a siloxane chain.</p>
+    </div>
     <hr>
     <a class="tabs btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
-    <a class="btn btn-dark btn-lg" href="/submit" role="button">Submit your Thoughts!</a>
-
-<!-- //<=user.subject%> -->
 
   </div>
 
 </div>
-<!--
-<div class="jumbotron centered">
-  <div class="container">
-    <i class="fas fa-key fa-6x"></i>
-    <h1 class="display-3">Learn</h1>
-    <p class="lead">Keep learning!</p>
-    <hr>
-    <!-- <a class="btn btn-light btn-lg" href="/register" role="button">Register</a> -->
-    <!-- <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a> -->
-<!--
-  </div>
-</div>
-<a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
-<a class="btn btn-dark btn-lg" href="/submit" role="button">Submit a Secret</a> -->
-<a class="back btn btn-light btn-lg" href="/logout" role="button">Back</a>
+<a class="back btn btn-light btn-lg" href="/subject" role="button">Back</a>
 <%- include('partials/footer') %>

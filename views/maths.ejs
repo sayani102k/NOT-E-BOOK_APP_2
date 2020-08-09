@@ -2,41 +2,34 @@
 
 <div class="jumbotron text-center">
   <div class="container">
-    <!-- <i class="fas fa-key fa-6x"></i> -->
-    <h1 class="display-3">Facts</h1>
 
-    <%posts.forEach(function(post){ %>
+    <h1 class="display-3">MATHS Facts</h1>
+    <div class="content">
 
-  <h1><%=post.title%></h1>
+    <h2>CALCULUS</h2>
+      <p>Calculus, originally called infinitesimal calculus or "the calculus of infinitesimals", is the mathematical study of continuous change, in the same way that geometry is the study of shape and algebra is the study of generalizations of arithmetic operations.
+It has two major branches, differential calculus and integral calculus; the former concerns instantaneous rates of change, and the slopes of curves, while integral calculus concerns accumulation of quantities, and areas under or between curves. These two branches are related to each other by the fundamental theorem of calculus, and they make use of the fundamental notions of convergence of infinite sequences and infinite series to a well-defined limit.[1]
+Infinitesimal calculus was developed independently in the late 17th century by Isaac Newton and Gottfried Wilhelm Leibniz.[2][3] Today, calculus has widespread uses in science, engineering, and economics.[4]
+In mathematics education, calculus denotes courses of elementary mathematical analysis, which are mainly devoted to the study of functions and limits. The word calculus (plural calculi) is a Latin word, meaning originally "small pebble" (this meaning is kept in medicine – see Calculus (medicine)). Because such pebbles were used for calculation, the meaning of the word has evolved and today usually means a method of computation. It is therefore used for naming specific methods of calculation and related theories, such as propositional calculus, Ricci calculus, calculus of variations, lambda calculus, and process calculus.</p>
+    </div>
+    <div class="content">
 
-  <p><%=post.content.substring(0,100)+"...."%>
-    <a href="/posts/<%=post._id%>">Read More</a>
-  </p>
-
-
-<% }); %>
-
+    <h2>MATHS</h2>
+      <p>The procedure for solving simultaneous linear equations now called Gaussian elimination appears in the ancient Chinese mathematical text Chapter Eight: Rectangular Arrays of The Nine Chapters on the Mathematical Art. Its use is illustrated in eighteen problems, with two to five equations.[4]
+Systems of linear equations arose in Europe with the introduction in 1637 by René Descartes of coordinates in geometry. In fact, in this new geometry, now called Cartesian geometry, lines and planes are represented by linear equations, and computing their intersections amounts to solving systems of linear equations.
+The first systematic methods for solving linear systems used determinants, first considered by Leibniz in 1693. In 1750, Gabriel Cramer used them for giving explicit solutions of linear systems, now called Cramer's rule. Later, Gauss further described the method of elimination, which was initially listed as an advancement in geodesy.[5]
+In 1844 Hermann Grassmann published his "Theory of Extension" which included foundational new topics of what is today called linear algebra. In 1848, James Joseph Sylvester introduced the term matrix, which is Latin for womb.
+Linear algebra grew with ideas noted in the complex plane. For instance, two numbers w and z in ℂ have a difference w – z, and the line segments {\displaystyle {\overline {wz}}\ \ {\text{and}}\ \ {\overline {0(w-z)}}}{\displaystyle {\overline {wz}}\ \ {\text{and}}\ \ {\overline {0(w-z)}}} are of the same length and direction. The segments are equipollent. The four-dimensional system ℍ of quaternions was started in 1843. The term vector was introduced as v = x i + y j + z k representing a point in space. The quaternion difference p – q also produces a segment equipollent to {\displaystyle {\overline {pq}}.}{\displaystyle {\overline {pq}}.} Other hypercomplex number systems also used the idea of a linear space with a basis.
+Arthur Cayley introduced matrix multiplication and the inverse matrix in 1856, making possible the general linear group. The mechanism of group representation became available for describing complex and hypercomplex numbers. Crucially, Cayley used a single letter to denote a matrix, thus treating a matrix as an aggregate object. He also realized the connection between matrices and determinants, and wrote "There would be many things to say about this theory of matrices which should, it seems to me, precede the theory of determinants".[5]
+Benjamin Peirce published his Linear Associative Algebra (1872), and his son Charles Sanders Peirce extended the work later.[6]
+The telegraph required an explanatory system, and the 1873 publication of A Treatise on Electricity and Magnetism instituted a field theory of forces and required differential geometry for expression. Linear algebra is flat differential geometry and serves in tangent spaces to manifolds. Electromagnetic symmetries of spacetime are expressed by the Lorentz transformations, and much of the history of linear algebra is the history of Lorentz transformations.
+The first modern and more precise definition of a vector space was introduced by Peano in 1888;[5] by 1900, a theory of linear transformations of finite-dimensional vector spaces had emerged. Linear algebra took its modern form in the first half of the twentieth century, when many ideas and methods of previous centuries were generalized as abstract algebra. The development of computers led to increased research in efficient algorithms for Gaussian elimination and matrix decompositions, and linear algebra became an essential tool for modelling and simulations.[5]
+See also Determinant § History and Gaussian elimination § History.</p>
+    </div>
 
     <hr>
     <a class="tabs btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
-    <a class="btn btn-dark btn-lg" href="/submit" role="button">Submit your Thoughts!</a>
-
-
-
   </div>
 </div>
-
-<!-- <div class="jumbotron centered">
-  <div class="container">
-    <i class="fas fa-key fa-6x"></i>
-    <h1 class="display-3">Learn</h1>
-    <p class="lead">Keep learning!</p>
-    <hr>
-    <!-- <a class="btn btn-light btn-lg" href="/register" role="button">Register</a> -->
-    <!-- <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a> -->
-<!--
-  </div>
-</div>
-<!-- <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a> -->
-<a class="back btn btn-light btn-lg" href="/logout" role="button">Back</a>
+<a class="back btn btn-light btn-lg" href="/subject" role="button">Back</a>
 <%- include('partials/footer') %>
